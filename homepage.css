@@ -1,0 +1,12 @@
+#spiderman-hero-img {
+    border: var(--thick-border-style);
+    border-right: var(--thin-border-style);
+    border-left: var(--thin-border-style);
+    border-radius: 20px;
+    max-width: 90%;
+    max-height: 80dvh;
+}
+
+h1 {
+    font-size: 3rem;
+}

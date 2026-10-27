@@ -3,33 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="name" content="Spiderman">
+        <meta name="name" content="Spiderman Tribute">
         <link rel="icon" type="image/x-icon" href="./images/logos/favicon.png">
-        <title>Spiderman</title>
+        
+        <title>Spiderman Tribute</title>
 
-        <link rel="stylesheet" src="./global.css" type="text/css" >
-        <link rel="stylesheet" src="./homepage.css" type="text/css" >
-    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./global.css" type="text/css" >
+        <link rel="stylesheet" href="./homepage.css" type="text/css" >
     </head>
 
     <body>
         <nav>
-            <img id="nav-logo" src="./images/logos/large-spiderman-logo.png" alt="spiderman logo">
-
-            <div class="center-column">
-                <img id="nav-text-based-logo" src="./images/logos/spiderman-text-based-logo.png" alt="the amazing spiderman text logo">
+            <a href="./" id="homepage-link">
+                <img src="./images/logos/large-spiderman-logo.png" id="nav-logo" alt="spiderman logo">
+            </a>
+            <div class="center-column noUser">
+                <img class="noUser" id="nav-text-based-logo" src="./images/logos/spiderman-text-based-logo.png" alt="the amazing spiderman text logo">
             </div>
 
             <div class="right-column">
-                <a href="./comics/">Comics</a>
-                <a href="./movies/">Movies</a>
+                <a class="nav-links" href="./">Home</a>
+                <a class="nav-links" href="./comics/">Comics</a>
+                <a class="nav-links" href="./movies/">Movies</a>
             </div>
         </nav>
 
         <main>
+            <img class="noUser" src="./images/SpiderManCover.jpg" id="spiderman-hero-img" alt="spiderman hanging upside down on a web with his symbol in the background">
+
             <section>
                 <h1>Why Spiderman is the Best Marvel Hero!</h1>
+
+                <div class="two-column-container">
+                    <p>
+                        The Amazing Spider-Man is the greatest superhero because he represents the purest definition of heroism: choosing to do good when there is absolutely nothing to gain. 
+                        Unlike heroes backed by unlimited wealth, advanced technology, or godlike status, Peter Parker is an ordinary person burdened with extraordinary responsibility. 
+                        He struggles financially, loses loved ones, sacrifices relationships, and is often hated by the very people he saves. 
+                        Yet, despite having every reason to walk away, he continues to protect others. 
+                        What makes Spider-Man truly exceptional isn't his strength, intelligence, or abilities; it's that he could choose an easier life but refuses to abandon people who need him. 
+                        His greatest superpower is his character. 
+                        While other heroes demonstrate what it means to be powerful, Spider-Man demonstrates what it means to be good. 
+                        The greatest hero isn't the one who can save the world, but the one who keeps choosing to save it even when the world gives him nothing in return.
+                    </p>
+                </div>
             </section>
         </main>
+
+        <footer>
+            <a href="./" id="homepage-link">
+                <img src="./images/logos/large-spiderman-logo.png" id="nav-logo" alt="spiderman logo">
+            </a>
+
+            <div class="right-column">
+                <a class="nav-links" href="./">Home</a>
+                <a class="nav-links" href="./comics/">Comics</a>
+                <a class="nav-links" href="./movies/">Movies</a>
+            </div>
+        </footer>
     </body>
 </html>
