@@ -1,12 +1,112 @@
-#spiderman-hero-img {
-    border: var(--thick-border-style);
-    border-right: var(--thin-border-style);
-    border-left: var(--thin-border-style);
+#hero {
+    position: relative;
+    overflow: hidden;
+    width: min(90%, calc(80dvh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    background-image: url("./images/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    border: var(--thin-border-style);
+    border-right: var(--thick-border-style);
+    border-left: var(--thick-border-style);
     border-radius: 20px;
-    max-width: 90%;
-    max-height: 80dvh;
+}
+
+#spidey-drop {
+    position: absolute;
+    left: 33.58%;
+    top: 13.15%;
+    width: 33.78%;
+    animation: web-drop 3s cubic-bezier(0.25, 0.8, 0.35, 1) both;
+}
+
+#spidey-swing {
+    position: relative;
+    transform-origin: 49.5% -18.2%;
+    animation: web-sway 3s ease-in-out -1.5s infinite alternate;
+}
+
+.hero-web {
+    position: absolute;
+    left: 49.4%;
+    bottom: 92%;
+    width: 4%;
+    height: 300%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    filter: blur(0.4px) drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.35));
+    pointer-events: none;
+}
+
+#hero-spiderman {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes web-drop {
+    0% {
+        transform: translateY(-120%);
+    }
+
+    80% {
+        transform: translateY(3%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes web-sway {
+    from {
+        transform: rotate(-0.8deg);
+    }
+
+    to {
+        transform: rotate(0.8deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #spidey-drop,
+    #spidey-swing {
+        animation: none;
+    }
 }
 
 h1 {
     font-size: 3rem;
+}
+
+.two-column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.two-column-container p {
+    text-align: left;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    .two-column-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+        max-width: 80rem;
+        margin: 0 auto 3rem;
+        padding: 0 2rem;
+    }
+
+    .two-column-container p {
+        flex: 1;
+        font-size: 1.15rem;
+    }
 }

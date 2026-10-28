@@ -16,9 +16,8 @@
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr) 5rem;
     align-items: center;
     text-align: center;
     background-color: var(--fadeColor);
@@ -35,7 +34,8 @@ nav {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: var(--fadeColor);
@@ -44,9 +44,9 @@ footer {
 }
 
 #nav-logo {
-    padding: 1rem;
-    width: 5rem;
-    height: 5rem;
+    padding: 0.75rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 #homepage-link {
@@ -67,16 +67,24 @@ footer {
 }
 
 .center-column {
-    align-items: center;
-    justify-items: center;
-    overflow: hidden;
-    height: 8rem;
-    margin-left: 12%;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+}
+
+.copyright {
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--spideyBlack);
+    font-size: 0.85rem;
 }
 
 #nav-text-based-logo {
-    margin-top: -1rem;
-    height: 10rem;
+    width: 100%;
+    max-width: 28rem;
+    aspect-ratio: 2172 / 270;
+    object-fit: cover;
     filter: invert(100%);
 }
 
@@ -84,12 +92,54 @@ footer {
     margin: 2px 8px;
 }
 
+nav .right-column {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0.75rem;
+}
+
 .nav-links {
     text-decoration: none;
     color: var(--spideyEyes);
     transition: color 0.3s ease-in-out;
-    margin: 2px 8px;
-    font-size: 1.6rem;
+    margin: 2px 12px;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 1024px) {
+    nav {
+        grid-template-columns: minmax(20rem, 1fr) minmax(0, 28rem) minmax(20rem, 1fr);
+    }
+
+    nav #homepage-link {
+        justify-self: start;
+    }
+
+    footer {
+        justify-content: space-between;
+    }
+
+    #nav-logo {
+        padding: 1rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .center-column {
+        margin: 0 1rem;
+    }
+
+    nav .right-column {
+        grid-column: auto;
+        justify-self: end;
+        margin: 2px 8px;
+    }
+
+    .nav-links {
+        margin: 2px 8px;
+        font-size: 1.6rem;
+    }
 }
 
 .nav-links:hover {
@@ -107,7 +157,14 @@ body {
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
+  font-family: "Bangers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+h3, h4, h5, h6 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;

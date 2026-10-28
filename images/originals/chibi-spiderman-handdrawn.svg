@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 300 520">
+    <defs>
+        <radialGradient id="headRed" cx="36%" cy="28%" r="78%">
+            <stop offset="0%" stop-color="#ff6b5e"/>
+            <stop offset="35%" stop-color="#e8302c"/>
+            <stop offset="75%" stop-color="#b3171c"/>
+            <stop offset="100%" stop-color="#6e0c12"/>
+        </radialGradient>
+        <radialGradient id="red" cx="35%" cy="25%" r="85%">
+            <stop offset="0%" stop-color="#f4483d"/>
+            <stop offset="60%" stop-color="#c81e23"/>
+            <stop offset="100%" stop-color="#7d0f15"/>
+        </radialGradient>
+        <radialGradient id="blue" cx="35%" cy="25%" r="85%">
+            <stop offset="0%" stop-color="#5b8ff0"/>
+            <stop offset="55%" stop-color="#2a58c2"/>
+            <stop offset="100%" stop-color="#132e6e"/>
+        </radialGradient>
+        <linearGradient id="legBlue" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#4a7fe6"/>
+            <stop offset="100%" stop-color="#173a8a"/>
+        </linearGradient>
+        <linearGradient id="lens" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="55%" stop-color="#fbf1e0"/>
+            <stop offset="100%" stop-color="#d9c29a"/>
+        </linearGradient>
+        <linearGradient id="silk" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#b9c0cc"/>
+            <stop offset="50%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#aab1bd"/>
+        </linearGradient>
+        <radialGradient id="shine" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="6"/>
+        </filter>
+        <filter id="softer" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3"/>
+        </filter>
+        <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+            <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000000" flood-opacity="0.45"/>
+        </filter>
+        <clipPath id="head">
+            <ellipse cx="150" cy="124" rx="92" ry="86"/>
+        </clipPath>
+        <clipPath id="torso">
+            <path d="M98 198 C92 218 96 242 108 258 C118 270 132 276 150 276 C168 276 182 270 192 258 C204 242 208 218 202 198 Z"/>
+        </clipPath>
+        <clipPath id="eyeL">
+            <path d="M66 92 C90 94 120 106 138 130 C138 156 118 168 98 164 C76 160 62 126 66 92 Z"/>
+        </clipPath>
+        <clipPath id="eyeR">
+            <path d="M234 92 C210 94 180 106 162 130 C162 156 182 168 202 164 C224 160 238 126 234 92 Z"/>
+        </clipPath>
+    </defs>
+
+    <g fill="none" stroke-linecap="round">
+        <path d="M46 -150 L48 214" stroke="#6f7787" stroke-width="6"/>
+        <path d="M46 -150 L48 214" stroke="url(#silk)" stroke-width="4"/>
+        <path d="M254 -150 L252 214" stroke="#6f7787" stroke-width="6"/>
+        <path d="M254 -150 L252 214" stroke="url(#silk)" stroke-width="4"/>
+    </g>
+
+    <g filter="url(#drop)">
+        <g fill="none" stroke-linecap="round">
+            <path d="M50 238 C58 290 100 312 150 312 C200 312 242 290 250 238" stroke="#6f7787" stroke-width="6"/>
+            <path d="M50 238 C58 290 100 312 150 312 C200 312 242 290 250 238" stroke="url(#silk)" stroke-width="3.5"/>
+        </g>
+
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M112 222 C94 228 78 228 62 222" stroke="#14172e" stroke-width="32"/>
+            <path d="M188 222 C206 228 222 228 238 222" stroke="#14172e" stroke-width="32"/>
+            <path d="M112 222 C94 228 78 228 62 222" stroke="#c81e23" stroke-width="22"/>
+            <path d="M188 222 C206 228 222 228 238 222" stroke="#a3171c" stroke-width="22"/>
+            <path d="M112 230 C94 235 78 235 64 230" stroke="#1d4399" stroke-width="7"/>
+            <path d="M188 230 C206 235 222 235 236 230" stroke="#122f73" stroke-width="7"/>
+            <path d="M108 216 C92 221 78 221 66 216" stroke="#ff7a6e" stroke-width="4" opacity="0.6"/>
+        </g>
+        <g stroke="#14172e" stroke-width="5" stroke-linejoin="round">
+            <path d="M32 206 C40 194 60 194 66 206 C72 220 66 236 52 238 C36 240 26 222 32 206 Z" fill="url(#red)"/>
+            <path d="M268 206 C260 194 240 194 234 206 C228 220 234 236 248 238 C264 240 274 222 268 206 Z" fill="url(#red)"/>
+        </g>
+        <g stroke="#14172e" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.8">
+            <path d="M38 210 L58 210 M36 220 L60 220 M38 230 L56 230"/>
+            <path d="M262 210 L242 210 M264 220 L240 220 M262 230 L244 230"/>
+        </g>
+        <ellipse cx="42" cy="205" rx="7" ry="4" fill="url(#shine)"/>
+        <ellipse cx="244" cy="205" rx="6" ry="3.5" fill="url(#shine)" opacity="0.7"/>
+        <path d="M48 192 L48 206 M252 192 L252 206" stroke="url(#silk)" stroke-width="4" stroke-linecap="round"/>
+
+        <path d="M108 258 C100 284 118 300 150 300 C182 300 200 284 192 258 Z" fill="#183c8e" stroke="#14172e" stroke-width="5" stroke-linejoin="round"/>
+
+        <path d="M98 198 C92 218 96 242 108 258 C118 270 132 276 150 276 C168 276 182 270 192 258 C204 242 208 218 202 198 Z" fill="url(#red)"/>
+        <g clip-path="url(#torso)">
+            <path d="M90 194 L118 194 C110 220 112 248 126 280 L90 280 Z" fill="url(#blue)"/>
+            <path d="M210 194 L182 194 C190 220 188 248 174 280 L210 280 Z" fill="#173a8a"/>
+            <path d="M90 262 C110 272 130 278 150 278 C170 278 190 272 210 262 L210 282 L90 282 Z" fill="#183c8e"/>
+            <g stroke="#5a0b10" stroke-width="1.5" fill="none" opacity="0.65">
+                <path d="M150 200 C149 230 149 252 150 272 M150 234 C142 222 134 212 126 204 M150 234 C158 222 166 212 174 204 M150 234 C142 248 136 258 130 268 M150 234 C158 248 164 258 170 268"/>
+                <path d="M132 218 Q150 211 168 218 M130 252 Q150 245 170 252"/>
+            </g>
+            <ellipse cx="150" cy="198" rx="74" ry="22" fill="#000000" opacity="0.55" filter="url(#soft)"/>
+            <ellipse cx="126" cy="236" rx="10" ry="20" fill="url(#shine)" opacity="0.35"/>
+        </g>
+        <path d="M98 198 C92 218 96 242 108 258 C118 270 132 276 150 276 C168 276 182 270 192 258 C204 242 208 218 202 198 Z" fill="none" stroke="#14172e" stroke-width="5" stroke-linejoin="round"/>
+        <g fill="#14172e">
+            <ellipse cx="150" cy="228" rx="3.5" ry="4"/>
+            <ellipse cx="150" cy="239" rx="4.5" ry="7"/>
+        </g>
+        <g stroke="#14172e" stroke-width="2" fill="none" stroke-linecap="round">
+            <path d="M146 232 C141 228 139 224 137 222 M146 236 L135 236 M146 240 C141 244 139 248 137 251"/>
+            <path d="M154 232 C159 228 161 224 163 222 M154 236 L165 236 M154 240 C159 244 161 248 163 251"/>
+        </g>
+
+        <g stroke="#14172e" stroke-width="5" stroke-linejoin="round">
+            <path d="M96 304 C96 320 104 334 116 340 L134 334 C126 324 124 312 126 300 Z" fill="#163679"/>
+            <path d="M204 304 C204 320 196 334 184 340 L166 334 C174 324 176 312 174 300 Z" fill="#11295e"/>
+            <path d="M106 334 C118 326 138 330 144 342 C146 354 132 360 116 358 C100 356 94 342 106 334 Z" fill="url(#red)"/>
+            <path d="M194 334 C182 326 162 330 156 342 C154 354 168 360 184 358 C200 356 206 342 194 334 Z" fill="url(#red)"/>
+            <ellipse cx="108" cy="290" rx="38" ry="30" fill="url(#legBlue)"/>
+            <ellipse cx="192" cy="290" rx="38" ry="30" fill="#1d4399"/>
+        </g>
+        <ellipse cx="96" cy="280" rx="16" ry="9" fill="url(#shine)" opacity="0.45" transform="rotate(-18 96 280)"/>
+        <ellipse cx="180" cy="280" rx="12" ry="7" fill="url(#shine)" opacity="0.2" transform="rotate(-18 180 280)"/>
+        <ellipse cx="112" cy="338" rx="8" ry="4" fill="url(#shine)" opacity="0.8"/>
+        <ellipse cx="186" cy="338" rx="7" ry="3.5" fill="url(#shine)" opacity="0.5"/>
+
+        <ellipse cx="150" cy="124" rx="92" ry="86" fill="url(#headRed)"/>
+        <g clip-path="url(#head)">
+            <g stroke="#4a070c" stroke-width="2" fill="none" opacity="0.6">
+                <ellipse cx="150" cy="146" rx="20" ry="17"/>
+                <ellipse cx="150" cy="144" rx="44" ry="38"/>
+                <ellipse cx="150" cy="140" rx="68" ry="60"/>
+                <ellipse cx="150" cy="134" rx="90" ry="82"/>
+                <path d="M150 146 C150 100 150 60 150 30"/>
+                <path d="M150 146 C170 110 190 70 206 42"/>
+                <path d="M150 146 C190 128 220 108 244 92"/>
+                <path d="M150 146 C196 158 224 172 242 186"/>
+                <path d="M150 146 C168 176 180 196 190 212"/>
+                <path d="M150 146 C130 110 110 70 94 42"/>
+                <path d="M150 146 C110 128 80 108 56 92"/>
+                <path d="M150 146 C104 158 76 172 58 186"/>
+                <path d="M150 146 C132 176 120 196 110 212"/>
+            </g>
+            <ellipse cx="190" cy="186" rx="80" ry="46" fill="#3b0508" opacity="0.45" filter="url(#soft)"/>
+            <ellipse cx="60" cy="140" rx="12" ry="70" fill="#ff8a7c" opacity="0.35" filter="url(#softer)"/>
+            <ellipse cx="108" cy="64" rx="34" ry="14" fill="url(#shine)" transform="rotate(-24 108 64)"/>
+            <ellipse cx="86" cy="92" rx="6" ry="4" fill="#ffffff" opacity="0.7"/>
+        </g>
+        <ellipse cx="150" cy="124" rx="92" ry="86" fill="none" stroke="#14172e" stroke-width="5"/>
+
+        <g stroke="#14172e" stroke-width="10" stroke-linejoin="round">
+            <path d="M66 92 C90 94 120 106 138 130 C138 156 118 168 98 164 C76 160 62 126 66 92 Z" fill="url(#lens)"/>
+            <path d="M234 92 C210 94 180 106 162 130 C162 156 182 168 202 164 C224 160 238 126 234 92 Z" fill="url(#lens)"/>
+        </g>
+        <g clip-path="url(#eyeL)">
+            <path d="M60 86 C90 90 122 104 142 130 L142 116 C124 96 92 84 60 80 Z" fill="#14172e" opacity="0.25"/>
+            <ellipse cx="88" cy="112" rx="10" ry="6" fill="#ffffff" opacity="0.9" transform="rotate(20 88 112)"/>
+            <circle cx="104" cy="122" r="3" fill="#ffffff" opacity="0.9"/>
+        </g>
+        <g clip-path="url(#eyeR)">
+            <path d="M240 86 C210 90 178 104 158 130 L158 116 C176 96 208 84 240 80 Z" fill="#14172e" opacity="0.25"/>
+            <ellipse cx="188" cy="118" rx="8" ry="5" fill="#ffffff" opacity="0.75" transform="rotate(-20 188 118)"/>
+        </g>
+    </g>
+</svg>
