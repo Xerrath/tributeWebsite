@@ -3,7 +3,7 @@
     overflow: hidden;
     width: min(90%, calc(80dvh * 16 / 9));
     aspect-ratio: 16 / 9;
-    margin: 0 auto;
+    margin: 2.5rem auto 0;
     background-image: url("./images/hero-background.jpg");
     background-size: cover;
     background-position: center;
@@ -108,5 +108,385 @@ h1 {
     .two-column-container p {
         flex: 1;
         font-size: 1.15rem;
+    }
+}
+
+#story,
+#villains,
+#biggest-fan,
+#best-hero {
+    max-width: 80rem;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.section-intro {
+    max-width: 45rem;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+    color: #b8b8b8;
+}
+
+.story-chapter,
+.villain-card,
+.why-columns,
+.best-hero-columns {
+    background-color: #0d1029;
+    border: var(--thin-border-style);
+    border-right: var(--thick-border-style);
+    border-left: var(--thick-border-style);
+    border-radius: 20px;
+}
+
+.story-chapter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
+}
+
+.why-columns,
+.best-hero-columns {
+    margin: 0 1rem 2rem;
+    padding: 1.5rem 1rem;
+}
+
+.chapter-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.chapter-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: var(--thin-border-style);
+    border-radius: 10px;
+}
+
+.chapter-image .cover {
+    max-width: 20rem;
+}
+
+.chapter-image figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #b8b8b8;
+}
+
+.chapter-text {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.chapter-year {
+    margin: 0;
+    color: var(--oldRed);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.chapter-text h2 {
+    font-size: 2.2rem;
+    margin: 0.25rem 0 1rem;
+}
+
+.quote-filler {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    background-color: #0d1029;
+    border: var(--thin-border-style);
+    border-right: var(--thick-border-style);
+    border-left: var(--thick-border-style);
+    border-radius: 20px;
+}
+
+.quote-filler p {
+    margin: 0;
+    font-family: "Bangers", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.quote-filler cite {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    color: #b8b8b8;
+}
+
+.fact-filler {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: left;
+    line-height: 1.6;
+    background-color: #0d1029;
+    border: 2px dashed var(--hoverColor);
+    border-radius: 10px;
+}
+
+.fact-filler h3 {
+    margin: 0 0 0.5rem;
+    color: var(--hoverColor);
+}
+
+.fact-filler p {
+    margin: 0;
+}
+
+.reasons {
+    width: 100%;
+    text-align: left;
+}
+
+.reasons h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.reasons ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    line-height: 1.6;
+}
+
+.reasons li {
+    margin-bottom: 0.75rem;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.stat-card {
+    padding: 1.25rem 1rem;
+    background-color: #0d1029;
+    border: var(--thin-border-style);
+    border-radius: 10px;
+}
+
+.stat-card .stat-number {
+    margin: 0;
+    font-family: "Bangers", sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.stat-card .stat-label {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    text-align: center;
+}
+
+.stat-label a {
+    color: var(--spideyEyes);
+    transition: color 0.3s ease-in-out;
+}
+
+.stat-label a:hover {
+    color: var(--newRed);
+}
+
+@media (min-width: 1024px) {
+    #story,
+    #villains,
+    #biggest-fan,
+    #best-hero {
+        padding: 0 2rem;
+    }
+
+    .story-chapter {
+        flex-direction: row;
+        gap: 4rem;
+        padding: 2.5rem 3rem;
+    }
+
+    .why-columns,
+    .best-hero-columns {
+        box-sizing: border-box;
+        margin: 0 auto 3rem;
+        padding: 2.5rem 3rem;
+    }
+
+    .story-chapter:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    .chapter-image,
+    .chapter-text {
+        flex: 1;
+    }
+
+    .chapter-text p {
+        font-size: 1.15rem;
+    }
+
+    .chapter-text h2 {
+        font-size: 2.8rem;
+    }
+
+    .quote-filler p {
+        font-size: 2.8rem;
+    }
+
+    .reasons,
+    .stat-grid {
+        flex: 1;
+    }
+
+    .reasons li {
+        font-size: 1.15rem;
+    }
+}
+
+.why-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.why-image img {
+    display: block;
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+}
+
+.filler-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filler-row .quote-filler,
+.filler-row .fact-filler {
+    max-width: none;
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    .why-columns {
+        align-items: center;
+    }
+
+    .why-image {
+        flex: 1;
+    }
+
+    .filler-row {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .filler-row .quote-filler,
+    .filler-row .fact-filler {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .filler-row .quote-filler p {
+        font-size: 2.2rem;
+    }
+
+    .filler-row .fact-filler p {
+        font-size: 1.15rem;
+    }
+}
+
+.villain-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.villain-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.villain-image {
+    flex: 0 0 7rem;
+    margin: 0;
+}
+
+.villain-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: var(--thin-border-style);
+    border-radius: 6px;
+}
+
+.villain-image figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    color: #b8b8b8;
+}
+
+.villain-text {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.villain-text h2 {
+    font-size: 1.6rem;
+    margin: 0.1rem 0 0.5rem;
+}
+
+.villain-text p {
+    margin: 0;
+}
+
+.villain-text .chapter-year {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 1024px) {
+    .villain-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .villain-card {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .villain-image {
+        flex-basis: 9rem;
+    }
+
+    .villain-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
+    .villain-text h2 {
+        font-size: 2rem;
+    }
+
+    .villain-text p {
+        font-size: 1.05rem;
     }
 }

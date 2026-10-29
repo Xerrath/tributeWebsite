@@ -1,0 +1,236 @@
+#shows-title {
+    font-size: 2.2rem;
+    margin: 1.5rem 1rem 0.5rem;
+}
+
+.show-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 0 1rem 3rem;
+}
+
+.show-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border: var(--thin-border-style);
+    border-radius: 10px;
+    background-color: #0d1029;
+    color: var(--spideyEyes);
+    text-decoration: none;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.show-card:hover {
+    border-color: var(--hoverColor);
+    transform: translateY(-4px);
+}
+
+.show-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: var(--spideyBlack);
+}
+
+.show-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.show-text {
+    text-align: center;
+}
+
+.show-card h2 {
+    font-size: 1rem;
+    margin: 0.75rem 0 0.25rem;
+}
+
+.show-card p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #b8b8b8;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--spideyEyes);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    color: var(--newRed);
+}
+
+.show-page {
+    margin: 0 0.5rem 3rem;
+}
+
+.show-page h1 {
+    font-family: "Bangers", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: var(--spideyEyes);
+    border-bottom: var(--thick-border-style);
+    padding-bottom: 0.5rem;
+}
+
+.show-page table {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto 2rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: var(--thin-border-style);
+    border-radius: 12px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+.show-page thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.show-page thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.show-page tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.show-page tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.show-page th {
+    background-color: var(--fadeColor);
+    padding: 0.75rem 0.25rem;
+    font-size: 1.1rem;
+}
+
+.show-page th:last-child {
+    width: 86px;
+}
+
+.show-page .auto-cols th:last-child {
+    width: auto;
+}
+
+.show-page td {
+    padding: 0.4rem;
+    border-top: 1px solid var(--fadeColor);
+    overflow-wrap: anywhere;
+}
+
+.show-page tbody tr:nth-child(even) {
+    background-color: #0d1029;
+}
+
+.show-page img {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.show-page a:not(.back-link) {
+    color: var(--hoverColor);
+}
+
+.sub-text {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #b8b8b8;
+}
+
+.no-image {
+    color: #b8b8b8;
+    font-size: 0.85rem;
+}
+
+.trailer {
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+
+.trailer iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.text-cell td {
+    padding: 0.75rem 1rem;
+}
+
+.text-cell summary {
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.source-note {
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    color: #b8b8b8;
+}
+
+@media (min-width: 1024px) {
+    #shows-title {
+        font-size: 3rem;
+    }
+
+    .show-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        max-width: 80rem;
+        margin: 0 auto 3rem;
+        padding: 0 1rem;
+    }
+
+    .show-card h2 {
+        font-size: 1.15rem;
+    }
+
+    .show-page h1 {
+        font-size: 2.8rem;
+    }
+
+    .show-page th:last-child {
+        width: 200px;
+    }
+
+    .show-page .auto-cols th:last-child {
+        width: auto;
+    }
+
+    .show-page td {
+        padding: 0.75rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    .show-page img {
+        width: 160px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .show-page img:hover {
+        transform: scale(1.05);
+    }
+}

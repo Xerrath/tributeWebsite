@@ -11,8 +11,8 @@
     --thick-border-style: var(--thick-border) solid var(--newRed);
     --thin-border: 2px;
     --thin-border-style: var(--thin-border) solid var(--newRed);
-    --blueBoxShadowBot: 0px 14px 14px -16px var(--fadeColor);
-    --blueBoxShadowTop: 0px 14px 14px 16px var(--fadeColor);
+    --blueBoxShadowBot: 0px 4px 14px 2px var(--fadeColor);
+    --blueBoxShadowTop: 0px -4px 14px 2px var(--fadeColor);
 }
 
 nav {
@@ -47,15 +47,16 @@ footer {
     padding: 0.75rem;
     width: 3.5rem;
     height: 3.5rem;
+    object-position: -9999px -9999px;
+    background-color: var(--spideyEyes);
+    background-clip: content-box;
+    -webkit-mask: url("./images/logos/large-spiderman-logo.png") center / contain no-repeat content-box;
+    mask: url("./images/logos/large-spiderman-logo.png") center / contain no-repeat content-box;
+    transition: background-color 0.3s ease-in-out;
 }
 
-#homepage-link {
-    transition: filter 0.3s ease-in-out;
-    filter: brightness(0) saturate(0%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-}
-
-#homepage-link:hover {
-    filter: brightness(0) saturate(100%) invert(18%) sepia(91%) saturate(5490%) hue-rotate(343deg) brightness(98%) contrast(98%);
+#homepage-link:hover #nav-logo {
+    background-color: var(--oldRed);
 }
 
 .noUser {
@@ -157,7 +158,7 @@ body {
     font-style: normal;
 }
 
-h1, h2 {
+h1, h2, .nav-links, .back-link {
   font-family: "Bangers", sans-serif;
   font-weight: 400;
   font-style: normal;
